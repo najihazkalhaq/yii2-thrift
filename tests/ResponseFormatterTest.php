@@ -13,5 +13,8 @@ class ResponseFormatterTest extends PHPUnit_Framework_TestCase
     public function testFormat()
     {
         // TODO: Implement the test
+        $responseFormatter = new \UrbanIndo\Yii2\Thrift\ResponseFormatter();
+        $response = new \UrbanIndo\Yii2\Thrift\Response();
+        $this->assertEquals('',$responseFormatter->format($response));
     }
 }

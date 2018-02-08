@@ -13,5 +13,11 @@ class RequestTest extends PHPUnit_Framework_TestCase
     public function testResolveService()
     {
         // TODO: Implement the test
+        $request = new \UrbanIndo\Yii2\Thrift\Request();
+        $this->assertInstanceOf(
+            \UrbanIndo\Yii2\Thrift\Request::class,
+            $request,
+            "Must be Instance of object"
+        );
     }
 }
